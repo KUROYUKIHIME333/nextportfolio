@@ -44,13 +44,13 @@ export const PROJECTS_DATA = [
 	{
 		key: 'project3',
 		imgUrl: 'https://i.ibb.co/0GGqLFS/shimri.png',
-		link: '#',
+		link: '',
 		isDev: true,
 	},
 	{
 		key: 'project4',
 		imgUrl: 'https://i.ibb.co/rfLpMhw4/Capture-d-cran-135.png',
-		link: '#',
+		link: '',
 		isDev: false,
 	},
 ];
