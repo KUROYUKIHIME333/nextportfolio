@@ -6,9 +6,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 // Initialize library to use icons (Need to be done only one time, I think)
 library.add(fas, fab);
 
-export const Icon = ({ name, type = 'solid', className = '' }) => {
+export const Icon = ({ name, type = 'solid', className = '', ...otherProperties }) => {
 	// name = the icon name ('moon', 'linkedin')
 	const iconPrefix = type === 'solid' ? 'fas' : 'fab';
 
-	return <FontAwesomeIcon icon={[iconPrefix, name]} className={className} />;
+	return <FontAwesomeIcon icon={[iconPrefix, name]} className={className} {...otherProperties} />;
 };
