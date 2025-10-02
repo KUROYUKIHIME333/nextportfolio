@@ -13,7 +13,7 @@ export default function HomePage() {
 			<section id="hero" className="section hero-section">
 				<div className="container">
 					<div className="hero-content">
-						<h1 data-aos="zoom-in">{t('hero_title')}</h1>
+						<h2 data-aos="zoom-in">{t('hero_title')}</h2>
 						<p className="subtitle" data-aos="zoom-in" data-aos-delay="100">{t('hero_subtitle')}</p>
 						<Button href="/projects" data-aos="zoom-in" data-aos-delay="200">{t('cta_projects')}</Button>
 					</div>
