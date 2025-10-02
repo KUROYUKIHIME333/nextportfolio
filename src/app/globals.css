@@ -577,6 +577,7 @@ body.dark-mode .company-date {
 }
 .exp-missions {
 	margin-left: 20px;
+	margin-bottom: 1.5rem;
 	list-style: disc;
 }
 
@@ -806,7 +807,7 @@ body.dark-mode .social-links a:hover {
 	.about-image {
 		flex: 0 0 180px;
 	}
-	
+
 	.cv-grid {
 		padding: 0.5rem;
 	}

@@ -12,7 +12,7 @@ export default function CVPage() {
 	return (
 		<section id="cv" className="section bg-gray-50 dark:bg-gray-900">
 			<div className="container cv-layout max-w-5xl">
-				<h2 className="section-title text-4xl font-bold mb-12 text-blue-600 dark:text-blue-400 text-center" data-aos="fade-down">
+				<h2 className="section-title text-4xl font-bold mb-12 text-blue-600 dark:text-blue-400 text-center" data-aos="zoom-in">
 					{t('cv_title')}
 				</h2>
 
@@ -21,22 +21,22 @@ export default function CVPage() {
 						<h3 className="cv-subtitle text-3xl font-bold mb-8 border-b pb-2 border-blue-400 text-gray-900 dark:text-gray-100">{t('cv_exp_title')}</h3>
 
 						{/* Simulation des Expériences Pro */}
-						<CVItem titleKey="exp_tracking_title" dateKey="exp_tracking_date" summaryKey="exp_tracking_summary">
-							<div className="skills-tags mt-4">
-								<SkillTag>Next.js</SkillTag>
-								<SkillTag>Redux Toolkit</SkillTag>
-								<SkillTag>Firebase</SkillTag>
-							</div>
-						</CVItem>
+						<CVItem titleKey="exp_tracking_title" dateKey="exp_tracking_date" summaryKey="exp_tracking_summary" missions="exp_tracking_missions" skills="exp_tracking_skills" />
 
-						<CVItem titleKey="exp_kadea_title" dateKey="exp_kadea_date" summaryKey="exp_kadea_summary" />
+						<CVItem titleKey="exp_kadea_title" dateKey="exp_kadea_date" summaryKey="exp_kadea_summary" missions="exp_kadea_missions" />
+
+						<CVItem titleKey="exp_orbit_title" dateKey="exp_orbit_date" summaryKey="exp_orbit_summary" missions="exp_orbit_missions" />
+
+						<CVItem titleKey="exp_sctp_title" dateKey="exp_sctp_date" summaryKey="exp_sctp_summary" missions="exp_sctp_missions" />
+
+						<CVItem titleKey="exp_sctp2_title" dateKey="exp_sctp2_date" summaryKey="exp_sctp2_summary" />
 					</div>
 
 					<div className="cv-column">
 						<h3 className="cv-subtitle text-3xl font-bold mb-8 border-b pb-2 border-blue-400 text-gray-900 dark:text-gray-100">{t('cv_edu_title')}</h3>
 
 						{/* Simulation des Formations */}
-						<CVItem titleKey="edu_kadea_title" dateKey="edu_kadea_date" />
+						<CVItem titleKey="edu_kadea_title" dateKey="edu_kadea_date" missions="edu_loyola_stages" />
 						<CVItem titleKey="edu_loyola_title" dateKey="edu_loyola_date" />
 
 						<h3 className="cv-subtitle text-2xl font-bold mt-10 mb-5 text-gray-900 dark:text-gray-100">{t('cv_skills_title')}</h3>
