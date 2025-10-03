@@ -264,7 +264,6 @@ body.dark-mode .cta-button {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	scale: 1.1;
 }
-
 /* ------------------------------------------- */
 /* INDEX.HTML (HERO/ABOUT)      */
 /* ------------------------------------------- */
@@ -528,8 +527,12 @@ body.dark-mode .quick-contact-info p {
 	margin-bottom: 4rem;
 }
 
+.download-cv-section p {
+	margin-bottom: 1rem;
+}
+
 .download-button {
-	margin-top: 1rem;
+	margin-top: 2rem;
 	padding: 0.8rem 2rem;
 }
 
@@ -594,8 +597,8 @@ body.dark-mode .company-date {
 	color: white;
 	padding: 0.4rem 1rem;
 	border-radius: 9999px;
-	font-size: 0.85rem;
-	font-weight: 500;
+	font-size: 0.9rem;
+	font-weight: bold;
 }
 body.dark-mode .skill-tag {
 	background-color: var(--dark-accent-violet);
@@ -606,11 +609,11 @@ body.dark-mode .skill-tag {
 	margin-bottom: 0.5rem;
 	font-size: 1rem;
 }
-.lang-list i {
+.lang-list-icon {
 	color: var(--light-accent-blue);
 	margin-right: 0.5rem;
 }
-body.dark-mode .lang-list i {
+body.dark-mode .lang-list-icon {
 	color: var(--dark-accent-blue);
 }
 
