@@ -11,10 +11,10 @@ export default function ContactPage() {
 	return (
 		<section id="contact" className="section alternate-bg">
 			<div className="container max-w-3xl">
-				<h2 className="section-title text-4xl font-bold mb-4 text-blue-600 dark:text-blue-400 text-center" data-aos="fade-down">
+				<h2 className="section-title text-4xl font-bold mb-4 text-blue-600 dark:text-blue-400 text-center" data-aos="zoom-in">
 					{t('contact_title')}
 				</h2>
-				<p className="subtitle text-xl mb-12 text-gray-600 dark:text-gray-300 text-center" data-aos="fade-down" data-aos-delay="100">
+				<p className="subtitle text-xl mb-12 text-gray-600 dark:text-gray-300 text-center" data-aos="zoom-in" data-aos-delay="100">
 					{t('contact_subtitle')}
 				</p>
 
@@ -67,7 +67,7 @@ export default function ContactPage() {
 					<Button>{t('contact_button')}</Button>
 				</form>
 
-				<div className="quick-contact-info mt-12 text-center" data-aos="fade-up" data-aos-delay="200">
+				<div className="quick-contact-info mt-12 text-center" data-aos="zoom-in">
 					<h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">{t('quick_contact_title')}</h3>
 					<p className="flex items-center justify-center text-lg mb-2 text-gray-700 dark:text-gray-300">
 						<Icon name="phone" className="mr-3 text-blue-500" />

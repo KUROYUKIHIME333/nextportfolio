@@ -62,7 +62,7 @@ export default function CVPage() {
 									<h3 className="cv-subtitle text-2xl font-bold mt-10 mb-5 text-gray-900 dark:text-gray-100" data-aos="fade-up">
 										{t('cv_lang_title')}
 									</h3>
-									<ul className="lang-list">
+									<ul className="lang-list" data-aos="fade-up">
 										{t('cv_lang_list').map((langue, index) => (
 											<li key={index} className="mb-2 text-gray-700 dark:text-gray-300">
 												<Icon type="solid" name="comment" className="lang-list-icon" />
