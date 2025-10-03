@@ -64,7 +64,7 @@ export default function ContactPage() {
 						aria-label={t('contact_message_placeholder')}
 					></textarea>
 
-					<Button type="cta">{t('contact_button')}</Button>
+					<Button>{t('contact_button')}</Button>
 				</form>
 
 				<div className="quick-contact-info mt-12 text-center" data-aos="fade-up" data-aos-delay="200">
