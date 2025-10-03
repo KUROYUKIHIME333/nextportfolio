@@ -41,8 +41,8 @@ export default function CVPage() {
 							</h3>
 
 							{/* Simulation des Formations */}
-							<CVItem titleKey="edu_kadea_title" dateKey="edu_kadea_date" missions="edu_loyola_stages" />
-							<CVItem titleKey="edu_loyola_title" dateKey="edu_loyola_date" />
+							<CVItem titleKey="edu_kadea_title" dateKey="edu_kadea_date"/>
+							<CVItem titleKey="edu_loyola_title" dateKey="edu_loyola_date"  missions="edu_loyola_stages" />
 
 							{t('cv_skills_list') && (
 								<>
