@@ -808,8 +808,18 @@ body.dark-mode .social-links a:hover {
 	.hero-content h1 {
 		font-size: 2.2rem;
 	}
-	.about-image {
-		flex: 0 0 180px;
+
+	.about-grid {
+		gap: 2rem;
+	}
+
+	/* .about-image {
+		flex: 0 0 80vw 80vw;
+	} */
+
+	.about-image img {
+		width: 80vw;
+		height: 80vw;
 	}
 
 	.cv-grid {
