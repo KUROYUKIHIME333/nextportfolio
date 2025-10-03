@@ -9,7 +9,7 @@ export const translations = {
 		nav_cv: 'CV',
 		nav_contact: 'Contact',
 		hero_title: 'Daniel Ramazani',
-		hero_subtitle: 'Ingénieur-technicien, Développeur web et passionné de la tech.',
+		hero_subtitle: 'Ingénieur-technicien en Maintenance Industrielle, Développeur web et passionné de la tech.',
 		cta_projects: 'Découvrir mes projets',
 		about_title: 'À Propos de Moi',
 		about_description:
@@ -149,7 +149,7 @@ export const translations = {
 		nav_cv: 'CV',
 		nav_contact: 'Contact',
 		hero_title: 'Daniel Ramazani',
-		hero_subtitle: 'Technician-Engineer, Web Developer and Tech Enthusiast.',
+		hero_subtitle: 'Industrial Maintenance Technician-Engineer, Web Developer and Tech Enthusiast.',
 		cta_projects: 'Discover my projects',
 		about_title: 'About Me',
 		about_description:
@@ -285,7 +285,7 @@ export const translations = {
 		nav_cv: 'CV',
 		nav_contact: 'Koma na ngai',
 		hero_title: 'Daniel Ramazani',
-		hero_subtitle: 'Ingénieur-technicien, Développeur web mpe molongi ya teki.',
+		hero_subtitle: 'Ingénieur-technicien na Maintenance Industrielle, Développeur web mpe molongi ya teki.',
 		cta_projects: 'Tala misala na ngai',
 		about_title: 'Mpo na ngai moko',
 		about_description:
@@ -423,7 +423,7 @@ export const translations = {
 		nav_cv: 'CV',
 		nav_contact: 'Mawasiliano',
 		hero_title: 'Daniel Ramazani',
-		hero_subtitle: 'Mhandisi-Mtaalamu, Msanidi Programu wa Wavuti na Mpenda Teknolojia.',
+		hero_subtitle: 'Mhandisi-Mtaalamu wa matengenezo ya viwandani, Msanidi Programu wa Wavuti na Mpenda Teknolojia.',
 		cta_projects: 'Gundua miradi yangu',
 		about_title: 'Kuhusu Mimi',
 		about_description:
