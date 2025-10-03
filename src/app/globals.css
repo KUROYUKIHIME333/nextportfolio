@@ -19,6 +19,17 @@
 	--dark-accent-blue: #3b82f6;
 	--dark-accent-violet: #a78bfa;
 	--dark-border: #374151;
+
+	/* Variables par défaut du loader (mode sombre) */
+	--loader-bg: var(--dark-primary-bg);
+	--tore-color-start: var(--dark-accent-blue);
+	--tore-color-end: var(--dark-accent-violet);
+	--halo-color: rgba(167, 139, 250, 0.9);
+	--tore-size: 100px;
+	--tore-thickness: 10px;
+	--tore-blur: 20px;
+	--center-cut: 55%;
+	--mask-edge: 65%;
 }
 
 /* ------------------------------------------- */
@@ -295,7 +306,7 @@ body.dark-mode .cta-button {
 	text-align: center;
 }
 
-.about-image img {
+.about-image img, .about-image-loader{
 	width: 100%;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
@@ -305,7 +316,10 @@ body.dark-mode .cta-button {
 	transition: border-color 0.4s ease;
 }
 
-body.dark-mode .about-image img {
+body.dark-mode .about-image-loader{
+	border-color: var(--dark-accent-blue);
+}
+body.dark-mode .about-image img{
 	border-color: var(--dark-accent-blue);
 }
 
@@ -817,7 +831,7 @@ body.dark-mode .social-links a:hover {
 		flex: 0 0 80vw 80vw;
 	} */
 
-	.about-image img {
+	.about-image img, .about-image-loader{
 		width: 80vw;
 		height: 80vw;
 	}
@@ -841,15 +855,62 @@ body.dark-mode .social-links a:hover {
 	}
 }
 
-/* Spinner (LoadingScreen) */
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
+/*LOADER*/
+/* Application du mode clair */
+.light-mode {
+	--loader-bg: var(--light-primary-bg);
+	--tore-color-start: var(--light-accent-blue);
+	--tore-color-end: var(--light-accent-violet);
+	--halo-color: rgba(124, 58, 237, 0.8);
+}
+
+/* 2. Styles de base du conteneur */
+.loader-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: var(--loader-bg);
+	transition: background-color 0.5s;
+}
+
+/* Loader de Tore (Anneau) */
+.tore-spinner {
+	position: relative;
+	width: var(--tore-size);
+	height: var(--tore-size);
+	border-radius: 50%;
+	background: conic-gradient(
+		/* La couleur principale et son opposé */ var(--tore-color-start) 0deg,
+		var(--tore-color-start) 90deg,
+
+		/* Bloc 1 (25% du cercle) */ /* Couleur secondaire */ var(--tore-color-end) 90deg,
+		var(--tore-color-end) 180deg,
+
+		/* Bloc 2 */ /* Une couleur sombre ou transparente pour créer un "vide" */ rgba(0, 0, 0, 0.2) 180deg,
+		rgba(0, 0, 0, 0.2) 270deg,
+
+		/* Bloc 3 (Vide/Contraste) */ /* Retour à la couleur principale pour la transition */ var(--tore-color-start) 270deg,
+		var(--tore-color-start) 360deg /* Bloc 4 */
+	);
+
+	/* CRÉATION DE L'EFFET ANNEAU */
+	mask: radial-gradient(circle at center, transparent var(--center-cut), black var(--mask-edge));
+	-webkit-mask: radial-gradient(circle at center, transparent var(--center-cut), black var(--mask-edge));
+
+	/* Flou appliqué sur l'anneau lui-même */
+	filter: blur(var(--tore-thickness));
+
+	/* Halo lumineux accentué */
+	box-shadow: 0 0 var(--tore-blur) var(--halo-color), 0 0 calc(var(--tore-blur) * 1.5) rgba(255, 255, 255, 0.1);
+
+	/* rotation circulaire */
+	animation: rotate2D 1.8s linear infinite;
+}
+
+@keyframes rotate2D {
 	to {
 		transform: rotate(360deg);
 	}
-}
-.animate-spin {
-	animation: spin 1s linear infinite;
 }

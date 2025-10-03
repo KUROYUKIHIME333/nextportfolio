@@ -3,7 +3,6 @@ import { AppProvider } from '../contexts/AppProvider';
 import { Header } from '../components/organisms/Header';
 import { Footer } from '../components/organisms/Footer';
 import { ParticlesBG } from '../components/organisms/ParticlesBg';
-import { LoadingScreen } from '../components/organisms/LoadingScreen';
 import './globals.css';
 import Script from 'next/script';
 
@@ -24,7 +23,6 @@ export default function RootLayout({ children }) {
 			</head>
 			<body className={poppins.className}>
 				<AppProvider>
-					<LoadingScreen />
 					<ParticlesBG />
 					<div className="relative z-20">
 						{/* What will be up to particles */}
