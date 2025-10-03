@@ -7,11 +7,9 @@ export const Footer = () => {
 	const { t } = useI18n();
 
 	return (
-		<footer className="footer bg-gray-100 dark:bg-gray-800 py-6 transition-colors">
+		<footer className="footer bg-gray-100 dark:bg-gray-800 py-6 transition-colors" data-aos="zoom-in">
 			<div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row justify-between items-center text-sm">
-				<p className="text-gray-600 dark:text-gray-400 mb-3 md:mb-0 font-bold">
-					{t('footer_text')}
-				</p>
+				<p className="text-gray-600 dark:text-gray-400 mb-3 md:mb-0 font-bold">{t('footer_text')}</p>
 				<div className="social-links flex space-x-4">
 					<Link
 						href="https://www.linkedin.com/in/daniel-hermann-ramazani-521786232/"

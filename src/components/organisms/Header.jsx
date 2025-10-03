@@ -21,7 +21,7 @@ export const Header = () => {
 	};
 
 	return (
-		<header className="header sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 shadow-md backdrop-blur-sm transition-colors">
+		<header className="header sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 shadow-md backdrop-blur-sm transition-colors" data-aos="zoom-in">
 			<div className="container mx-auto px-4 py-4 flex justify-between items-center max-w-7xl">
 				<h1 className="logo text-2xl font-bold text-blue-600 dark:text-blue-400" onClick={handleMenuToggle}>
 					Daniel Ramazani
