@@ -18,7 +18,7 @@ export const Button = ({ children, href, type = 'cta', download, ...otherPropert
 		}
 	};
 
-	if ((type = 'downloadCV')) {
+	if (type === 'downloadCV') {
 		return (
 			<Link href={`/documents/CV_Daniel_Ramazani.pdf`} download="CV_Daniel_Ramazani.pdf" className="cta-button" {...otherProperties}>
 				{children}
@@ -26,7 +26,7 @@ export const Button = ({ children, href, type = 'cta', download, ...otherPropert
 		);
 	}
 
-	if ((type = 'downloadEFSET')) {
+	if (type === 'downloadEFSET') {
 		return (
 			<Link href={`/documents/EF SET Certificate.pdf`} download="Daniel_RAMAZANI_EF_SET_Certificate.pdf" className="cta-button" {...otherProperties}>
 				{children}
@@ -35,7 +35,7 @@ export const Button = ({ children, href, type = 'cta', download, ...otherPropert
 	}
 
 	return (
-		<button type={typeValue} onClick={linkRedirection} className={'cta-button'} download={download} {...otherProperties}>
+		<button type={typeValue()} onClick={linkRedirection} className={'cta-button'} download={download} {...otherProperties}>
 			{children}
 		</button>
 	);
