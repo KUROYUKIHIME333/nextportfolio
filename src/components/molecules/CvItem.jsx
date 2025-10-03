@@ -8,11 +8,6 @@ export const CVItem = ({ titleKey, dateKey, summaryKey, missions, skills }) => {
 	const translatedMissions = t(missions);
 	const translatedSkills = t(skills);
 
-	useEffect(() => {
-		console.log(translatedMissions);
-		console.log(translatedSkills);
-	}, []);
-
 	return (
 		<div className="mt-8 exp-item mb-8 p-4 border-l-4 border-blue-500 dark:border-blue-400 bg-white dark:bg-gray-800 rounded-lg shadow-md" data-aos="fade-up">
 			<h4 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">{t(titleKey)}</h4>
